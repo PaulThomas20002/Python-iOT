@@ -1,5 +1,5 @@
 import turtle
-
+##credits to copy assignment . com
 
 def gajurel(x, y):
     turtle.setx(x)
