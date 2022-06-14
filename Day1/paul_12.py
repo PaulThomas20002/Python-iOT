@@ -10,4 +10,4 @@ elif a==b:
     print(a,"Both are same nigg",a)
 else:
     print("wtf")
-    
+##its nothin much
