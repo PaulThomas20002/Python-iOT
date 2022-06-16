@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {%csrf_token%}
+    <table>
+        <tr>
+            <td>Name:
+                <input type="text" name="t1" id=""><br><br>
+                class:
+                <input type="text" name="t2" id=""><br><br>
+                
+                M1:
+                <input type="text" name="t3" id=""><br><br>
+                M2:
+                <input type="text" name="t4" id=""><br><br>
+                M3:
+                <input type="text" name="t5" id=""><br><br>
+                
+
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Total"></td><br><br>
+        </tr>
+        <tr>
+            
+            <td>Name:<input type="text" value="{{result.name}}"></td>
+           
+            <td>Class:<input type="text" value="{{result.class}}"></td>
+            
+            <td>Mark1:<input type="text" value="{{result.mark1}}"></td>
+            
+            <td>Mark2:<input type="text" value="{{result.mark2}}"></td>
+            
+            <td>Mark3:<input type="text" value="{{result.mark3}}"></td><br><br>
+            
+            <!--<td>Total:<input type="text" value="{{result}}"></td>-->
+            
+        </tr>
+    </table>
+    
+    </form>
+</body>
+</html>
