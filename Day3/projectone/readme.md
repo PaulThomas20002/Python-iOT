@@ -18,4 +18,16 @@ add your function<br>
 def subtract(request1):<br>
     return render(request1,"sub.html")
     <br>
-in webapp .. urls.py
+in webapp .. urls.py  <br>
+from django.conf.urls import url  <br>
+from django.contrib import admin  <br>
+from Myapp import views  <br>
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url('addition',views.add),
+    url('subtraction',views.subtract)]
+    
+
+
+python manage.py runserver
