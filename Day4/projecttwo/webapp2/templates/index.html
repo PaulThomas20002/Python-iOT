@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+h3{font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:large;color:white;}
+</style>
+</head>
+<body bgcolor="bindhi">
+    <form action="" method="post">
+        {%csrf_token%}
+    <fieldset>
+        <legend><h3>Form</h3></legend>
+        <table>
+        <tr>
+            <td><h3>Name:<br>
+                <input type="text" name="t1" id=""><br><br>
+                Age:<br>
+                <input type="text" name="t2" id=""><br><br>                
+                DOB:<br>
+                <input type="date" name="t3" id=""><br><br>
+                Mail:<br>
+                <input type="text" name="t4" id=""><br><br>
+                Phone:<br>
+                <input type="text" name="t5" id=""><br><br>
+            </h3>
+              </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="UPLOAD"></td><br><br>
+        </tr><!--
+        <tr>
+            <td><br>Name:<input type="text" value="{{result.name}}"></td>
+           
+            <td><br>Age:<input type="text" value="{{result.class}}"></td>
+            
+            <td><br>DOB:<input type="text" value="{{result.mark1}}"></td>
+            
+            <td><br>Mail:<input type="text" value="{{result.mark2}}"></td>
+            
+            <td><br>Phone:<input type="text" value="{{result.mark3}}"></td><br><br>
+            
+            <td>Total:<input type="text" value="{{result}}"></td>-->
+            
+        </tr>
+    </table>
+    </fieldset>
+    </form>
+</body>
+</html>
